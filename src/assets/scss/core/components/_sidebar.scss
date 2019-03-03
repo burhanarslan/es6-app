@@ -1,0 +1,73 @@
+
+.sidebar-component {
+  position: relative;
+  overflow: hidden;
+  background: $sidebar-component-bg-color;
+  width: 50%;
+
+  .sidebar-date {
+    position: absolute;
+    width: 100%;
+    font-size: 40px;
+    padding: 15px;
+    color: $sidebar-component-date-color;
+    top: calc(50% - 20px);
+    z-index: 99999999;
+    background: $sidebar-component-date-bg-color;
+    font-weight: bold
+  }
+
+  .slidebar-wrapper {
+    position: absolute;
+    transition: all .5s ease;
+    color: $sidebar-component-color;
+    animation: moveBottomToTop 20s linear infinite;
+
+    .slidebar {
+      padding: 20px 102px;
+      float: left;
+      display: inline-block;
+      list-style-type: none;
+      font-size: 20px;
+      color: $sidebar-item-color;
+    }
+  }
+}
+
+
+@-moz-keyframes moveBottomToTop {
+  0% {
+    bottom: -250%;
+  }
+  100% {
+    bottom: 150%;
+  }
+}
+
+@-ms-keyframes moveBottomToTop {
+  0% {
+    bottom: -250%;
+  }
+  100% {
+    bottom: 150%;
+  }
+}
+
+@keyframes moveBottomToTop {
+  0% {
+    bottom: -250%;
+  }
+  100% {
+    bottom: 150%;
+  }
+}
+
+@-webkit-keyframes moveBottomToTop {
+  0% {
+    bottom: -250%;
+  }
+  100% {
+    bottom: 150%;
+  }
+}
+

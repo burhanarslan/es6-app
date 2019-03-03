@@ -1,0 +1,83 @@
+/*
+Variables definition
+ */
+$primary:                                                     rgba(207, 22, 28 , 1);
+$white:                                                       #fff;
+$black:                                                       #000;
+$color-one:                                                   #d5d5d5;
+$color-two:                                                   #980404;
+$color-three:                                                 rgba(207, 22, 28, 0.9);
+$color-four:                                                  rgba($black, 0.8);
+
+
+$app-news-list-scrollbar-bg-color:                            $primary;
+/*
+News Page variables
+ */
+$news-page-news-today-bg:                                      $white;
+$news-page-today-wrapper-guery-border-color:                   $color-one;
+$news-page-news-today-date-color :                             $color-one;
+$news-page-news-today-title-color:                             $black;
+$news-page-news-today-detail-color:                            $color-one;
+$news-page-footer-color :                                      $black;
+$news-page-button-bg-color :                                   $white;
+$news-page-button-color :                                      $primary;
+$news-page-button-border-color :                               $primary;
+$news-page-button-hover-bg-color :                             $primary;
+$news-page-button-hover-color :                                $white;
+$news-page-logo-wrapper-bg-color:                              $primary;
+$news-page-logo-wrapper-border-color:                          $color-two;
+$news-page-point-color:                                        $primary;
+$news-page-left-sidebar-button-bg-color:                       $white;
+$news-page-left-sidebar-button-color:                          $primary;
+$news-page-left-sidebar-button-border-color:                   $color-one;;
+
+/*
+Home Page Variables
+ */
+$home-page-main-left-area-color:                               $white;
+$home-page-logo-wrapper-bg-color:                              $color-three;
+$home-page-main-left-point-bg-color:                           $primary;
+$home-page-news-today-bg:                                      $color-three;
+$home-page-news-today-title-color:                             $white;
+$home-page-news-today-derail-color:                            $white;
+$home-page-navigation-icon-color :                             $white;
+$home-page-navigation-button-bg-color :                        $primary;
+$home-page-footer-color :                                      $white;
+
+/*
+Left sidebar veriables
+ */
+$left-sidebar-bg-color:                                        $primary;
+$left-sidebar-item-color:                                      $white;
+$left-sidebar-item-hover-color:                                $color-two;
+$left-sidebar-footer-component-wrapper:                        $white;
+
+
+/*
+News List Component variables
+ */
+$news-list-item-wrapper-guery-border-color :                   $color-one;
+$news-list-component-bg-color:                                 $white;
+$news-list-component-border-color:                             $color-one;
+$news-list-item-wrapper-border-color:                          $color-one;
+$news-list-item-date-color:                                    $color-one;
+$news-list-item-summary-color:                                 $black;
+$news-list-item-detail-color:                                  $color-one;
+
+
+/*
+Sidebar component Variables
+ */
+$sidebar-component-bg-color:                                   $color-four;
+$sidebar-component-date-color:                                 $white;
+$sidebar-component-date-bg-color:                              $black;
+$sidebar-component-color:                                      $white;
+$sidebar-item-color:                                           $white;
+
+
+
+
+
+
+

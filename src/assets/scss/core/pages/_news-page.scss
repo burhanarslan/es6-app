@@ -1,0 +1,200 @@
+.news-page-wrapper {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+
+
+  .news-wrapper-component {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    @media screen and (max-width: 376px) {
+      flex-direction: column;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+
+    .news-today-wrapper {
+      flex-direction: column;
+      justify-content: center;
+      display: flex;
+      width: 25%;
+      background: $news-page-news-today-bg;
+      padding: 20px;
+
+      @media screen and (max-width: 376px) {
+        padding: 68% 15px;
+        position: relative;
+        border-bottom: 1px solid $news-page-today-wrapper-guery-border-color;
+        display: block;
+        width: 100%;
+      }
+
+      .news-today-date {
+        padding: 10px;
+        color: $news-page-news-today-date-color;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .news-today-title {
+        color: $news-page-news-today-title-color;
+        text-align: left;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 10px
+      }
+
+      .news-today-detail {
+        color: $news-page-news-today-detail-color;
+        text-align: left;
+        font-size: 15px;
+        font-weight: 400
+
+      }
+
+      .footer-component {
+        .footer-component-wrapper {
+          color: $news-page-footer-color;
+          position: absolute;
+          text-align: left;
+          bottom: 20px;
+          font-family: 'Poppins', sans-serif;
+          font-size: 12px;
+          width: 25%;
+          @media screen and (max-width: 376px) {
+
+            width: 82%;
+          }
+
+
+        }
+      }
+    }
+
+    .button-component {
+      background: $news-page-button-bg-color;
+      font-size: 24px;
+      font-weight: bold;
+      height: 50px;
+      top: 85%;
+      z-index: 999;
+      position: absolute;
+      width: 50px;
+      color: $news-page-button-color;
+      border-color: $news-page-button-border-color;
+      border-radius: 30px;
+      @media screen and (max-width: 376px) {
+        display: none;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        background: $news-page-button-hover-bg-color !important;
+        color: $news-page-button-hover-color !important;
+      }
+    }
+  }
+
+  .logo-wrapper {
+    background-color: $news-page-logo-wrapper-bg-color;
+    position: relative;
+
+    .logo {
+      height: 120px;
+      padding: 10px 5px;
+      width: 40px;
+      border-right: 1px solid $news-page-logo-wrapper-border-color;
+
+      .img-area {
+        background-image: url('../assets/images/logo.svg');
+        width: 45px;
+        background-size: 35px 35px;
+        border: none;
+        height: 32px;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .little-point {
+      height: 7px;
+      width: 7px;
+      background: $news-page-point-color;
+      bottom: 15px;
+      left: calc(50% - 7px);
+      border-radius: 3px;
+      position: absolute;
+    }
+
+    .left-sidebar-button {
+      width: 100%;
+      height: 100%;
+      font-size: 16px;
+      border: none;
+      background: $news-page-left-sidebar-button-bg-color;
+      color: $news-page-left-sidebar-button-color;
+      border-right: 1px solid $news-page-left-sidebar-button-border-color;
+
+
+      &:focus {
+        outline: none;
+      }
+
+    }
+
+    .fa-times:before {
+      position: absolute;
+      top: 50%;
+      left: calc(50% - 7px);
+      font-size: x-large;
+    }
+
+    .fa-grip-lines-vertical:before {
+      position: absolute;
+      top: 50%;
+      left: calc(50% - 7px);
+      font-size: x-large;
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 376px) {
+  .news-page-wrapper {
+    .news-wrapper-component {
+      .news-today-wrapper {
+
+        .news-today-date {
+          padding: 10px;
+        }
+
+        .news-today-title {
+          padding: 10px;
+        }
+
+        .news-today-detail {
+          padding: 10px;
+          width: 300px;
+        }
+      }
+    }
+
+    .logo-wrapper {
+      .logo {
+        height: 40px;
+        padding: 5px 5px;
+
+        .img-area {
+          width: 40px;
+          background-size: 40px 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}

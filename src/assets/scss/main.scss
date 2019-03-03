@@ -1,0 +1,28 @@
+// Core Components
+@import "core/variables";
+@import "core/pages";
+@import "core/components";
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 3px;
+
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $app-news-list-scrollbar-bg-color;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $app-news-list-scrollbar-bg-color;
+}
