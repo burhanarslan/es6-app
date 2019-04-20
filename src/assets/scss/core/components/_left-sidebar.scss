@@ -43,7 +43,7 @@
     bottom: 20px;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
-    @media screen and (max-width: 376px) {
+    @include media-breakpoint('xs') {
       padding: 3px 5px;
     }
   }

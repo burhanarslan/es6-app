@@ -13,6 +13,9 @@ export class Navigation extends BaseElement {
         let button = new NavigationButton('Hemen Oku');
         button.appendToElement(this.element);
         button.element.click(() => application.activateRoute('NewsList'));
+        let button2 = new NavigationButton('Game');
+        button2.appendToElement(this.element);
+        button2.element.click(() => application.activateRoute('Game'));
     }
 
     getElementString() {

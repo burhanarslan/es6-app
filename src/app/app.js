@@ -4,6 +4,7 @@ import {NewsDataService} from './services/news-data-service.js';
 import {ApplicationBase} from './framework/application-base.js';
 import {HomePage} from './pages/home-page.js';
 import {NewsPage} from "./pages/news-page.js";
+import {GamePage} from "./pages/game-page";
 
 export class App extends ApplicationBase {
 
@@ -14,6 +15,7 @@ export class App extends ApplicationBase {
 
         this.addRoute('Home', new HomePage(), true);
         this.addRoute('NewsList', new NewsPage());
+        this.addRoute('Game', new GamePage());
 
 
     }
